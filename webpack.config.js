@@ -8,7 +8,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: '',
+    publicPath: 'elm-fingerpaint/dist/',
     path: path.resolve(__dirname + '/dist'),
     filename: '[name].js',
   },
