@@ -35,8 +35,12 @@ update msg model =
             else
                 ( { model | cursor = clientPos }, Cmd.none )
 
-        StartDrawing _ ->
-            ( { model | drawing = True }, Cmd.none )
+        StartDrawing { clientPos } ->
+            let
+                points =
+                    addPoint model clientPos
+            in
+                ( { model | points = points, drawing = True }, Cmd.none )
 
         StopDrawing _ ->
             ( { model | drawing = False }, Cmd.none )

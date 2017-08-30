@@ -13239,11 +13239,12 @@ var _user$project$Update$update = F2(
 					};
 				}
 			case 'StartDrawing':
+				var points = A2(_user$project$Update$addPoint, model, _p0._0.clientPos);
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
-						{drawing: true}),
+						{points: points, drawing: true}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'StopDrawing':
