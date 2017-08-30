@@ -7,4 +7,4 @@ Elm Fingerpaint
 
 `npm start`
 
-[Demo](https://rphansen91.github.io/elm-fingerpaint)
+[Demo](https://rphansen91.github.io/elm-fingerpaint/dist)
